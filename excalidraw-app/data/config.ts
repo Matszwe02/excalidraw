@@ -46,8 +46,8 @@ import {
     if (storageBackends.has(storageBackendName)) {
       storageBackend = storageBackends.get(storageBackendName) as StorageBackend;
     } else {
-      console.warn("No storage backend found, default to firebase");
-      storageBackend = firebaseStorage;
+      console.warn("No storage backend found, default to httpStorage");
+      storageBackend = httpStorage;
     }
   
     return storageBackend;
